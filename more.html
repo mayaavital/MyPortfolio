@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Athletics</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">Maya Avital</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="more.html"> Athletics</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/maya-avital/" target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero2"></section>
+      <section class="introduction">
+        <h2>2x Division 1 NCAA Champion (2022, 2023)</h2>
+        <h3>Women's Water Polo</h3>
+        <h3>Stanford Student Athlete 2020-2025</h3>
+      </section>
+      <section class="gallery">
+        <img src="images/IMG_4336.PNG" />
+        <p style="padding: 1.3em; text-align: center">
+          Team Captain 2024 season <br />
+          Three-time ACWPC All-American (2022-24) <br />
+          Two-time All-MPSF conference (2022-23) <br />
+          NCAA All-Tournament Second Team (2022) <br />
+        </p>
+        <img src="images/CH20230514WWP_Stanford_USC_NCAA-118.jpg" />
+      </section>
+      <section class="introduction" style="margin-bottom: 20px">
+        <h2>Transferrable Skills: Stanford Athlete -> SWE/Designer</h2>
+        <p>click on the skills to read more</p>
+      </section>
+      <section style="text-align: center">
+        <button type="button" class="collapsible">Resilience</button>
+        <div class="content">
+          <p>
+            Failure is inevitable in a sport like water polo, but what you learn
+            from the failure is the key to helping you succeed the next time.
+            The design world moves fast and fails often, failure is an essential
+            part of exploration and creativity. I am confident that my
+            resilience will drive me to continue learning from failures and move
+            towards a successful outcome. <br />
+            “Enlighted trial and error succeeds over the planning of the lone
+            genius” - Tom Kelly
+          </p>
+        </div>
+        <button type="button" class="collapsible">Time Management</button>
+        <div class="content">
+          <p>
+            The schedule of a student athlete in computer science and symbolic
+            systems is demanding. At a minimum I devote 20 hours a week to water
+            polo. I quickly had to learn how to put my head down and work,
+            getting the most out of every hour. I strongly believe that this
+            ability will make me very efficient in a work place environment.
+          </p>
+        </div>
+        <button type="button" class="collapsible">Teamwork</button>
+        <div class="content">
+          <p>
+            No one can win alone in water polo, it requires a tight knit group
+            who can always show up for eachother and work to make eachother
+            better, on a true team every member has a valued role that advances
+            the team's goal. SWE & design roles are extremely collaborative, as
+            a life long team sport athlete I thrive in these kinds of
+            environment.
+          </p>
+        </div>
+        <button type="button" class="collapsible">Leadership</button>
+        <div class="content">
+          <p>
+            Goalie is a unique position in water polo, it requires you to build
+            a strong leadership presence from a young age. Throughout my career
+            I've observed and learned from many different leadership styles
+            while simultaneously cultivating my own in the cage. In a work
+            setting, I believe my hands on experiences whether it's from being a
+            team captain to a freshman 2nd string goalie will allow me to be
+            both a leader and a learner on the job.
+          </p>
+        </div>
+      </section>
+
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+      </script>
+    </main>
+  </body>
+</html>

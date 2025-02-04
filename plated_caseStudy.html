@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plated</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">Maya Avital</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="more.html"> Athletics</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/maya-avital/" target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="content-container">
+        <div class="main-content">
+          <h1>Plated: A recipe discovery & cooking app</h1>
+          <h2>Background & Project Overview</h2>
+          <p>
+            Plated was a group project for my course on human computer
+            interaction design. We were tasked to pick a domain and follow the 5
+            stage design process. In my role I oversaw and participated in every
+            step of the design and development, from organizing team materials
+            to helping implement databases and implementing the mobile
+            interface, I made significant contributions to our final product and
+            process.
+          </p>
+          <hr />
+          <h2>Problem Statement</h2>
+          <p>
+            During our needfinding process we explored the domain of cooking and
+            found that many amateur chefs find cooking to be a tedious chore
+            that often takes longer than expected and lacks creativity.<br /><br />
+            Plated addresses this by offering a curated selection of user-shared
+            recipes tailored to individual preferences and available
+            ingredients. Additionally, the app features an in-app virtual chef
+            assistant, Chef Su, who provides guidance and answers common cooking
+            questions. By fostering creativity and collaboration, Plated
+            transforms cooking into a more enjoyable and accessible experience
+            for chefs of all skill levels.<br /><br />
+            Through needfinding interviews with diverse participants, we
+            explored the challenges and motivations of amateur cooks to uncover
+            key insights that inform the design of effective cooking solutions.
+            Out of 4 hour long interviews in the span of a week, distinct
+            patterns and needs emerged. Chef N emphasized the importance of
+            accessible, flexible recipes that spark curiosity and allow cooking
+            to become a form of self-expression. Travis highlighted the need for
+            meal preparation to align with specific nutritional goals while
+            being time-efficient and less of a chore. The Philz Customer shared
+            the challenge of cooking as an unenjoyable task and stressed the
+            importance of creating quick, easy meals that satisfy her family.
+            These insights underscored that time, knowledge gaps, and motivation
+            are significant barriers for amateur cooks, and solutions that
+            simplify cooking while fostering creativity and enjoyment could be
+            transformative.
+          </p>
+          <h2>Design Process</h2>
+          <p>
+            After creating our interview protocol, we recruited interview
+            participants. Most of them were randomly approached, only one was
+            recruited for their expertise in the cooking and cooking education
+            domain. After conducting several interviews, we frameworked the data
+            in an empathy map in order to make sense of it.<br /><br />
+            With the data from our interview analysis, we created POV statements
+            for our most engaging interviews (Jad, Philz customer, and Travis),
+            while also keeping in mind diversity of thought and background.
+            After we created each POV, we rapidly brainstormed 35 HMW statements
+            for Jad, Philz customer, and Travis each. We boiled down the 35 HMW
+            per interviewee to the 2-3 most interesting, and from there
+            brainstormed solutions. We came away with three viable solutions:
+            Dinner Party Planning App, Food tinder, and Su chef.
+          </p>
+          <section class="side_by_side" style="max-width: 25rem">
+            <img src="images/hmw.jpg" alt="Description of the photo" />
+          </section>
+          <p>
+            <br />
+            Our final solution, Plated, focuses on enhancing the cooking
+            experience for amateur chefs by offering a curated selection of
+            recipes based on their pantry items and preferences. The app
+            empowers users to discover new recipes, manage their ingredient
+            inventory, and even contribute their own creations, fostering
+            creativity and independence in the kitchen. This solution reflects
+            our mission to make cooking both enjoyable and accessible,
+            addressing user frustrations with uninspiring meal preparation.<br /><br />
+            First we built a low fidelity prototype by sketching about 21
+            screens that covered the functionality of our app across different
+            task flows. We conducted usability testing on four potential users
+            from different demographics and with different backgrounds. With our
+            results we went onto building our medium fidelity prototype in
+            Figma, receiving design feedback from HCI Phd students halfway
+            through the development. Before implementing our prototype in react
+            native, our figma prototype underwent heuristic evaluation process.
+            After fixing our heuristic violations, we began developing our
+            high-fi prototype through React Native and included almost every
+            feature we initially set out to develop. Here’s the evolution of
+            Plated
+          </p>
+          <section class="side_by_side" style="max-width: 25rem">
+            <img src="images/filters.jpg" alt="Description of the photo" />
+          </section>
+          <section class="side_by_side" style="max-width: 25rem">
+            <img src="images/pantry.jpg" alt="Description of the photo" />
+          </section>
+          <section class="side_by_side" style="max-width: 25rem">
+            <img src="images/home.jpg" alt="Description of the photo" />
+          </section>
+          <p>
+            <br />
+            During the development process I performed overall polishing of the
+            entire app along with implementing multiple features myself. First I
+            did the chef su chat bot integration, I used a Gemini API to
+            accomplish this and kept our interface simple but on brand. To
+            facilitate easy use, I included potential chat prompts and an
+            informational page with more details about how to use our chat bot,
+            along with disclosures about the Gemini API. <br /><br />
+
+            Additionally I implemented the user profile page, this page is
+            designed to be the hub for recipe access with options to organize
+            all recipes into "cookbooks", along with sections displaying your
+            personal, saved, and recreation recipes. I used Supabase Java based
+            Client library commands to render recipes from our database
+            belonging in each category in their recipe boxes, along with the
+            corresponding recipe data on each recipe details page. You can see
+            the final product of my work in our demo video below!
+          </p>
+          <h2>Outcome</h2>
+          <p>
+            All this work culminated in our final project expo where we were
+            able to speak about our product to the project judges, other
+            students, interested faculty, and industry folks. This served as an
+            opportunity to practice speaking about our product in a way that
+            translates our vision to potential users, while also allowing us to
+            get authentic feedback for us to use with any future work on this
+            project. During this expo we ran demos of the application and
+            allowed users to post “recipes” in real time. If you would like to
+            learn more about the specifics of our design process or try the app
+            out yourself on ExpoGo you can click this link to our Plated
+            Website. Below is a demo of our finalized high fidelity prototype:
+          </p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/GdWoM-H-FGo?si=gZ8a-hvuHUB7aYuO"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="side-content">
+          <p><strong>Length:</strong><br />10 weeks</p>
+          <p>
+            <strong>Tools:</strong><br />Figma<br />React Native<br />Expo Go<br />Github<br />
+          </p>
+          <p>
+            <strong>Skills & Methods:</strong><br />Needfinding Interviews<br />POV
+            Generation<br />Prototyping <br />Prototype Testing<br />Front end
+            development<br />Pitching
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
