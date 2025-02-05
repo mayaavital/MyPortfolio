@@ -147,6 +147,7 @@ nav {
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
 }
 
 .project-card:hover {
@@ -162,16 +163,19 @@ nav {
 .project-info {
   padding: 1rem;
   text-align: center;
+  text-decoration: none;
 }
 
 .project-info h2 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  text-decoration: none;
 }
 
 .project-info p {
   font-size: 1rem;
   color: #555;
+  text-decoration: none;
 }
 
 /*  Page Specific Styles */
@@ -309,4 +313,19 @@ link a:hover {
 .side-content strong {
   font-weight: bold;
   color: #333;
+}
+
+.block-button {
+  padding: 13px 26px;
+  font-family: Optima, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  width: fit-content;
+  font-style: normal;
+  color: #fff;
+  background-color: #272727;
+  align-self: self-end;
+  text-decoration: none;
 }
