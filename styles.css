@@ -60,6 +60,7 @@ nav {
 }
 
 .social-links a:hover {
+  text-decoration: none;
   color: #007bff;
 }
 
@@ -225,9 +226,9 @@ link a {
   color: #333;
   transition: color 0.3s;
 }
-link a:hover {
+/* link a:hover {
   color: #007bff;
-}
+} */
 
 .column {
   font-family: Optima, sans-serif;
