@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maya Avital</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Minimal inline tweaks for the landing page */
+      .home-container {
+        max-width: 600px;
+        margin: 4rem auto 0 auto;
+        padding: 2rem;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        text-align: center;
+      }
+      .home-avatar {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 1.5rem;
+        border: 3px solid #eee;
+      }
+      .home-nav {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 2.5rem;
+        font-size: 1.1rem;
+      }
+      .home-nav a {
+        color: #333;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+      }
+      .home-nav a:hover {
+        color: #007bff;
+      }
+      @media (max-width: 600px) {
+        .home-container {
+          margin: 1.5rem 0 0 0;
+          padding: 1rem;
+        }
+        .home-nav {
+          gap: 1rem;
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="home-nav">
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Work</a>
+        <a href="art.html">Athletics</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div class="home-container">
+        <img
+          src="images/your-avatar.jpg"
+          alt="Maya Avital headshot"
+          class="home-avatar"
+        />
+        <h1>Hi! My name is Maya, and I'm a UX researcher and designer.</h1>
+        <p style="margin: 1.5rem 0">
+          I draw upon a background in psychology and design to bring empathy and
+          human-centered approaches to my work. I'm fascinated with learning
+          about people in their environments and leveraging that context to
+          inform meaningful innovation. Most recently, this has led me to work
+          in the tech and design space.
+        </p>
+        <p style="margin-bottom: 1.5rem">
+          In my spare time, I love to travel, experiment with different art
+          mediums, and play water polo.
+        </p>
+        <p>
+          <a
+            href="resume.pdf"
+            target="_blank"
+            style="color: #007bff; text-decoration: underline"
+            >Resume</a
+          >
+          &nbsp;|&nbsp;
+          <a
+            href="https://www.linkedin.com/in/maya-avital/"
+            target="_blank"
+            style="color: #007bff; text-decoration: underline"
+            >LinkedIn</a
+          >
+          &nbsp;|&nbsp;
+          <a
+            href="contact.html"
+            style="color: #007bff; text-decoration: underline"
+            >Contact</a
+          >
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 Maya Avital. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
