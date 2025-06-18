@@ -298,8 +298,7 @@ link a {
   margin: 2rem auto;
   justify-content: center;
 }
-.main-content,
-.side-content {
+.main-content .side-content {
   text-align: left;
 }
 /* Main content styling */
@@ -400,13 +399,21 @@ link a {
     padding-top: 1.5rem;
   }
   .content-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
     padding: 1rem;
     max-width: 100vw;
     width: 100%;
     box-sizing: border-box;
-    overflow-x: visible;
+  }
+  .main-content {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+  .side-content {
+    order: 2;
+    margin-top: 0;
   }
 }
 
@@ -446,7 +453,7 @@ link a {
   display: flex;
   gap: 2.5rem;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Optima", "Arial", sans-serif;
   margin-bottom: 0.5rem;
 }
