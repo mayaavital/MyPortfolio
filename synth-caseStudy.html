@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synth</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="centered-header">
+        <h1 class="main-title">MAYA AVITAL</h1>
+        <nav class="centered-nav">
+          <a href="index.html">ABOUT</a>
+          <a href="portfolio.html" class="active">WORK</a>
+          <a href="more.html">ATHLETICS</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- <div class="block-button">
+        <a style="margin-top: 2rem"> &lt;Back </a>
+      </div> -->
+      <h1 style="text-align: center">Synth: a social music discovery app</h1>
+      <div class="content-container">
+        <div class="main-content">
+          <h2>Background & Project Overview</h2>
+          <p>
+            Synth was a 10-week-long project for my course CS 377U:
+            Understanding Users with
+            <a href="https://www.frankbentley.com/" target="_blank"
+              >Frank Bentley</a
+            >. It required us to work on a team and apply our course learnings
+            on industry user research and design methods to the execution of a
+            project. <br /><br />In my role, I oversaw and contributed to every
+            stage of the process, from a literature review and generative study
+            to usability testing with an MVP and a field study with a fully
+            functional demo app.
+          </p>
+          <hr />
+          <h2>Problem Statement</h2>
+          <p>
+            We set out to design an application that addressed key themes and
+            pain points uncovered in our preliminary research: the value of
+            music as a social connector, the importance of in-person sharing,
+            and the mixed effectiveness of traditional gamification methods.
+            Specifically, we aimed to explore how a game-based experience could
+            foster deeper group identity, increase music discovery diversity,
+            and create more meaningful, socially motivated interactions.
+            <br /><br />
+            Our goal was to build an engaging, multiplayer application that
+            leveraged these insights to enhance the way people share and
+            discover music together.
+          </p>
+          <h2>Process</h2>
+          <p>
+            Our process can be seperated into three phases: <br />
+            1. An initial literature review, market analysis, and generative
+            research study <br />
+            2. An iterative design and development process with usability
+            testing guiding our desgin decisions <br />
+            3. The field study with our fully functional demo app <br />
+            <br />
+            Our <strong>literature review & competitive review</strong> allowed
+            us to first understand what others have done in the domain of music
+            sharing and discovery, while also identifying gaps in the literature
+            and app market. With this knowledge, we defined
+            <strong
+              >open research questions that we focused on in our generative
+              research study</strong
+            >:
+          </p>
+
+          <ul class="question-list">
+            <li>
+              Can gamification be leveraged to improve music discovery diversity
+              and encourage exploration?
+            </li>
+            <li>
+              What are meaningful and motivational incentives to use when
+              gamifying the exploration of music?
+            </li>
+            <li>
+              What specific combination of these factors can maximize user
+              engagement & satisfaction?
+            </li>
+          </ul>
+          <p>
+            Our <strong>generative study</strong> consisted of three one-on-one
+            in-depth interviews and a diary study where three participants used
+            the music-sharing platform Airbuds and shared their experience.
+            After aggregating the feedback we received in our generative study,
+            we established the following <strong>key themes</strong>:
+          </p>
+          <ul class="question-list">
+            <li>
+              People have meaningful reactions to the music that people listen
+              to.
+            </li>
+            <li>Sharing music is an important feature in music discovery.</li>
+            <li>
+              In-person music sharing adds value and depth to the kinds of
+              interactions that can be had.
+            </li>
+            <li>
+              Participants like social games but there's mixed sentiment around
+              other forms of gamification such as badges, streaks, etc.
+            </li>
+          </ul>
+          <p>
+            The above feedback guided our decision to design our app to be a
+            social, music-sharing game that people would play in person to
+            facilitate meaningful interactions. Enter <strong>Synth</strong>, a
+            social music-based game that combines Spotify integration with
+            interactive, multiplayer gameplay to facilitate music discovery and
+            competition with your friends.<br /><br />
+            Players each contribute five recently played Spotify tracks, which
+            are pooled and randomly selected to create a unique song for each
+            round. In every round, a 30-second clip is played, and players must
+            guess who listened to the song, earning points for correct guesses
+            and optionally opening the track to save on Spotify. <br /><br />As
+            we designed and implemented our product, we performed
+            <strong>usability tests</strong> at each phase of development
+            (sketches, Figma, and MVP) using the feedback to address key
+            problems on a feature-level, design/prompt-level, or overall product
+            strategy decisions.
+          </p>
+          <div class="carousel-container">
+            <button class="carousel-arrow left" aria-label="Previous slide">
+              &#60;
+            </button>
+            <div class="carousel-slide">
+              <img src="images/synth-sketches.png" alt="Synth Sketches" />
+            </div>
+            <button class="carousel-arrow right" aria-label="Next slide">
+              &#62;
+            </button>
+            <div class="carousel-thumbnails">
+              <img
+                src="images/synth-sketches.png"
+                alt="Synth Sketches"
+                class="active"
+              />
+              <img src="images/synth-figma.png" alt="Synth Figma" />
+              <img src="images/synth-app.png" alt="Synth App" />
+            </div>
+          </div>
+          <p>
+            Our final app in its entirety is hosted on Vercel as a web
+            application, and we were able to start our
+            <strong>field study</strong>. We utilized multiple methods again,
+            <strong
+              >informational interviews, playtests, and diary studies</strong
+            >. We tested with our target audience, college freshmen, who are
+            often in a phase of expressed desire to meet new people and deepen
+            their social connections. <br /><br />
+            In the front half of the field study, we ran playtests where we
+            would observe gameplay amongst a group of 3-8 players, taking notes
+            and doing informational interviews after. Then we chose a group of 4
+            friends to do a diary study with the app over a week to understand
+            how our application is used in people's daily lives. Collecting
+            quantitative data with Firebase Analytics and qualitative data
+            across all of our methods, we were able to explore the larger story
+            of synth and formulate design implications that should be addressed
+            in the future.
+          </p>
+          <h2>Outcome</h2>
+          <p>
+            All this work culminated in our final presentation on our full
+            product journey in front of highly regarded industry experts and a
+            final CHI style research paper. In our presentation we got the
+            opportunity to practice speaking about our product and process
+            similar to how a product team might present their work. Our judges
+            asked us questions about our process and our product.
+            <br />
+            I have included our final paper below and presentation which
+            contains a quick demo.
+          </p>
+          <iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vRD4kCjq8KI_5PZvOkSHRcBY1lNP6moeBstTwCK8DUHRJZ_Fln1yZ7cQ2_ap9y2qswHFi3w1Q_d_XXc/pubembed?start=false&loop=true&delayms=5000"
+            width="100%"
+            height="10%"
+            frameborder="0"
+            allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+          ></iframe>
+
+          <div class="block-button" style="margin-top: 2rem">
+            <a href="plated_caseStudy.html" style="color: white">
+              NEXT: PLATED
+            </a>
+          </div>
+        </div>
+
+        <div class="side-content">
+          <p><strong>Length:</strong><br />10 weeks</p>
+          <p>
+            <strong>Tools:</strong><br />Figma<br />React Native<br />Expo Go<br />Firebase<br />Vercel<br />Github<br />LaTeX<br />
+          </p>
+          <p>
+            <strong>Skills & Methods:</strong><br />In-depth Interview<br />Literature
+            Review<br />Diary Study<br />Rapid Prototype Iteration
+            <br />Usability Testing & Quantative Analytics Analysis<br />Front
+            end development<br />Competetive Market Analysis<br />
+          </p>
+        </div>
+      </div>
+    </main>
+    <script>
+      const images = [
+        { src: "images/synth-sketches.png", alt: "Synth Sketches" },
+        { src: "images/synth-figma.png", alt: "Synth Figma" },
+        { src: "images/synth-app.png", alt: "Synth App" },
+      ];
+
+      let current = 0;
+      const slideImg = document.querySelector(".carousel-slide img");
+      const leftBtn = document.querySelector(".carousel-arrow.left");
+      const rightBtn = document.querySelector(".carousel-arrow.right");
+      const thumbnails = document.querySelectorAll(".carousel-thumbnails img");
+
+      function showSlide(idx) {
+        current = idx;
+        slideImg.src = images[idx].src;
+        slideImg.alt = images[idx].alt;
+        thumbnails.forEach((thumb, i) => {
+          thumb.classList.toggle("active", i === idx);
+        });
+      }
+
+      leftBtn.addEventListener("click", () => {
+        showSlide((current - 1 + images.length) % images.length);
+      });
+      rightBtn.addEventListener("click", () => {
+        showSlide((current + 1) % images.length);
+      });
+      thumbnails.forEach((thumb, i) => {
+        thumb.addEventListener("click", () => showSlide(i));
+      });
+
+      // Initialize
+      showSlide(0);
+    </script>
+  </body>
+</html>

@@ -143,7 +143,7 @@ nav {
 /* Work Page Specific Styles */
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   padding: 7rem;
   background: #fff;
@@ -184,15 +184,22 @@ nav {
   background: #f9f9f9;
 }
 
+.project-info h2,
+.project-info p {
+  text-decoration: none;
+}
+
 .project-info h2 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  text-decoration: none;
 }
 
 .project-info p {
   font-size: 1rem;
   color: #555;
+}
+
+.project-card a {
   text-decoration: none;
 }
 
@@ -353,7 +360,7 @@ link a {
   text-decoration: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .projects {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -453,4 +460,103 @@ link a {
 }
 .centered-nav a:hover {
   color: #181818;
+}
+
+.centered-nav a.active {
+  color: #181818;
+}
+
+.question-list {
+  margin-left: 2rem; /* Indent the list */
+  font-size: 0.95em; /* Slightly smaller font */
+  color: #333; /* Optional: match your text color */
+  margin-bottom: 1.5rem; /* Space below the list */
+}
+.question-list li {
+  margin-bottom: 0.5rem; /* Space between questions */
+  line-height: 1.5;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  margin: 2rem auto 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-slide {
+  width: 100%;
+  max-width: 600px; /* matches your main-content width */
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: none;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(200, 200, 200, 0.3);
+  border: none;
+  font-size: 2.5rem;
+  color: #444;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  transition: background 0.2s;
+}
+.carousel-arrow.left {
+  left: 0.5rem;
+}
+.carousel-arrow.right {
+  right: 0.5rem;
+}
+.carousel-arrow:hover {
+  background: rgba(200, 200, 200, 0.7);
+}
+
+.carousel-thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.carousel-thumbnails img {
+  width: 80px;
+  height: 50px;
+  object-fit: cover;
+  opacity: 0.5;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: opacity 0.2s, border 0.2s;
+}
+.carousel-thumbnails img.active {
+  opacity: 1;
+  border: 2px solid #888;
+}
+
+@media (max-width: 700px) {
+  .carousel-slide {
+    max-width: 100vw;
+  }
+  .carousel-thumbnails img {
+    width: 50px;
+    height: 32px;
+  }
 }
