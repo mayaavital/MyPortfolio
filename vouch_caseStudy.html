@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vouch</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="centered-header">
+        <h1 class="main-title">MAYA AVITAL</h1>
+        <nav class="centered-nav">
+          <a href="index.html">ABOUT</a>
+          <a href="portfolio.html" class="active">WORK</a>
+          <a href="more.html">ATHLETICS</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- <div class="block-button">
+        <a style="margin-top: 2rem"> &lt;Back </a>
+      </div> -->
+      <h1 style="text-align: center">
+        Vouch: Date with a little help from your friends
+      </h1>
+      <div class="content-container">
+        <div class="main-content">
+          <h2>Background & Project Overview</h2>
+          <p>
+            Vouch was a 6-week project for my course CS 278: Social Computing.
+            We worked in teams to design, launch, and manage a novel social
+            computing system. We then analyzed the behavior we saw on our system
+            through the lens of social computing system theories and ideas we
+            learned throughout the course.
+          </p>
+          <hr />
+          <h2>Problem Statement</h2>
+          <p>
+            We set out to solve the problem of how to make online dating less
+            stressful, more authentic, and socially engaging by shifting the
+            responsibility of matchmaking from individuals to their trusted
+            friend groups. <br /><br />
+            Traditional dating apps often place pressure on users to make the
+            first move and present themselves perfectly, which can be
+            intimidating, especially in close-knit communities like Stanford. By
+            leveraging strong social ties and group participation, our goal was
+            to create a dating experience that felt more collaborative,
+            inclusive, and fun, while addressing key pain points around
+            self-presentation, engagement, and user retention.
+          </p>
+          <h2>Design Process</h2>
+          <p>
+            First, we drew on course concepts to choose a project topic to
+            explore through the building of a novel system, the frictions and
+            social dynamics that exist among users on app-based dating sites.
+            The frictions we refer to are:
+          </p>
+          <ul class="question-list">
+            <li>
+              That having so many options at your fingertips can make dating
+              apps like Tinder feel more like an extrinsic game rather than a
+              pursuit of an intrinsic human connection.
+            </li>
+            <li>
+              As a result of this mechanism, matches begin to pile up without
+              either user feeling inclined to escalate this match into a real
+              date.
+            </li>
+          </ul>
+          <p>
+            To mitigate this dead end in the dating app paradigm, we wanted to
+            create a sociotechnical system that would prioritize in-person
+            connections and getting users on first dates. In order to test our
+            envisioned core social dynamics without having to build any complex
+            code, we performed a piggyback experience prototype. When building a
+            sociotechnical system, the most important question is less about
+            whether the interface is usable and more about nailing how the
+            social dynamics will play out.
+          </p>
+          <h4>Piggyback Prototype</h4>
+          <p>
+            For our prototype, we acted as the matching algorithm, finding
+            people in our community who we knew to be single, and leveraged
+            iMessage to gauge each pair's availability, activity level, and
+            price range for the activity that we would then choose for them.
+            After the date ended, we interviewed each person to get their
+            thoughts and feelings on the whole process. In order to explore some
+            potential different feature combinations and their effects on the
+            social dynamics of the experience, we had a few variations in
+            logistics across each date: single pair blind date, group blind
+            date, and friend blind date. <br /><br />From these three trials, we
+            found that having dates planned for users generally enhanced their
+            overall experience as it reduced decision fatigue and piqued
+            excitement due to the blind nature. When moving to translate these
+            insights into our final sociotechnical system, we felt we would run
+            into significant problems trying to establish trust between online
+            significant problems trying to establish trust between online daters
+            choosing blind dates in a traditional dating app architecture. In
+            thinking more about what made our friends trust the dates we were
+            setting them up on in the piggyback prototype, we realized that it
+            was the fact that we, as friends, had set them up and "vouched" for
+            the person they were meeting. This is how Vouch was born. Rather
+            than relying solely on individual swiping, Vouch places the power of
+            matchmaking in the hands of your social circle. Once enough of your
+            friends and your matches' friends have approved the match, you will
+            be prompted with a Google form to input your availability, and a
+            date will be set up for you.
+          </p>
+          <h4>Design and Implementation:</h4>
+          <p>
+            Without the time to create the perfect interface design, we focused
+            on creating a simple and intuitive experience that emphasized social
+            matchmaking. We streamlined onboarding to avoid overwhelming users,
+            allowing them to quickly join and explore before building out their
+            profiles in more detail. Users could sign up as daters, matchmakers,
+            or both, and were guided through selecting preferences such as
+            gender and sexuality. Once onboarded, matchmakers could swipe
+            through candidates for their friends, locking in a friend to swipe
+            for and voting on potential matches. We intentionally designed the
+            swiping interface to be clean and easy to use, though we later
+            identified that it may have made swiping feel too casual for the
+            significance of setting up a friend. We also built in customization
+            features for daters, like choosing preferred date activities and
+            availability, which helped users coordinate matches and suggest
+            compatible plans.
+          </p>
+          <div class="carousel-container">
+            <button class="carousel-arrow left" aria-label="Previous slide">
+              &#60;
+            </button>
+            <div class="carousel-slide">
+              <img src="images/vouch-drawings1.png" alt="Vouch Sketches" />
+            </div>
+            <button class="carousel-arrow right" aria-label="Next slide">
+              &#62;
+            </button>
+            <div class="carousel-thumbnails">
+              <img
+                src="images/vouch-onboard1.png"
+                alt="Vouch onboarding screens"
+                class="active"
+              />
+              <img
+                src="images/vouch-onboard2.png"
+                alt="Vouch onboarding screens"
+              />
+              <img src="images/vouch-swiping.png" alt="Vouch swiping screen" />
+              <img src="images/vouch-matchP.png" alt="Vouch match portal" />
+              <img src="images/vouch-drawings1.png" alt="Vouch Sketches" />
+              <img src="images/vouch-drawings2.png" alt="Vouch Sketches" />
+              <!-- Add more thumbnails here if you add more images -->
+            </div>
+          </div>
+          <p>
+            We developed the app using React Native with a backend powered by
+            Google Firebase. This allowed us to authenticate users, store
+            profiles, and calculate matches efficiently. Initially, we aimed to
+            launch via TestFlight, but due to technical limitations, we pivoted
+            to deploying a web-based version on Vercel. Despite this constraint,
+            we successfully launched the app within the Stanford community,
+            targeting friend groups as atomic networks to drive engagement and
+            social accountability. While the web format may have impacted
+            long-term retention, the technical foundation supported core
+            functionality and enabled us to observe authentic user behavior.
+            Features like the liaison role for coordinating dates and Google
+            Form integration for availability were simple yet effective ways to
+            facilitate real-life meetups through the app.
+          </p>
+
+          <h2>Outcome</h2>
+          <p>
+            Our launch successfully validated many of our core hypotheses about
+            social matchmaking. After a week of use, we interviewed participants
+            of different user types in order to gather their experiences into
+            reflections on the design, user behavior, and social computing
+            theory. Friend groups drove the most engagement and accountability
+            on the platform. Users who joined with friends were significantly
+            more active, regularly swiping and coordinating dates, and over only
+            one week of use, we even observed a successful match that led to an
+            in-person date. Our users found that the vouch process reduced the
+            stress of self-presentation when meeting people; essentially, the
+            difficulty of "making the first move".<br /><br />
+            However, the launch also revealed important challenges. Solo users
+            struggled to stay engaged without a built-in network, and
+            matchmakers expressed hesitancy when swiping for friends due to a
+            fear of disappointment from the dater in retrospect. Additionally,
+            users were reluctant to add acquaintances as friends without clear
+            norms on who you should be able to swipe for, and wanted more in-app
+            communication features to collaborate during the vouching process.
+            These insights highlighted the need for stronger onboarding, clearer
+            expectations, and more robust tools for social coordination. Moving
+            forward, future iterations should address the introduced
+            complexities around pressure, accountability, and trust.
+          </p>
+
+          <div
+            class="block-button left-align"
+            style="margin-top: 2rem; border-radius: 5px"
+          >
+            <a
+              href="https://vouchapp.vercel.app/"
+              target="_blank"
+              style="color: white; text-decoration: none"
+            >
+              Vercel Deployment Link
+            </a>
+          </div>
+          <div
+            class="block-button"
+            style="margin-top: 2rem; border-radius: 5px; right: 0.5rem"
+          >
+            <a
+              href="plated_caseStudy.html"
+              style="color: white; text-decoration: none; border-radius: 5px"
+            >
+              NEXT: PLATED</a
+            >
+          </div>
+        </div>
+
+        <div class="side-content">
+          <p><strong>Length:</strong><br />6 weeks</p>
+          <p>
+            <strong>Tools:</strong><br />Figma<br />React Native<br />Expo Go<br />Firebase<br />Vercel<br />Github<br />
+          </p>
+          <p>
+            <strong>Skills & Methods:</strong><br />PiggyBack Prototyping<br />User
+            Experience Interviews<br />Prototyping <br />Prototype Testing<br />Front
+            end development<br />
+            Backend Firebase Integration<br />
+            SocioTechnical System Analysis
+          </p>
+        </div>
+      </div>
+    </main>
+    <script>
+      const images = [
+        { src: "images/vouch-onboard1.png", alt: "Vouch onboarding screens" },
+        { src: "images/vouch-onboard2.png", alt: "Vouch onboarding screens" },
+        { src: "images/vouch-swiping.png", alt: "Vouch swiping screen" },
+        { src: "images/vouch-matchP.png", alt: "Vouch match portal" },
+        { src: "images/vouch-drawings1.png", alt: "Vouch Sketches" },
+        { src: "images/vouch-drawings2.png", alt: "Vouch Sketches" },
+      ];
+
+      let current = 0;
+      const slideImg = document.querySelector(".carousel-slide img");
+      const leftBtn = document.querySelector(".carousel-arrow.left");
+      const rightBtn = document.querySelector(".carousel-arrow.right");
+      const thumbnails = document.querySelectorAll(".carousel-thumbnails img");
+
+      function showSlide(idx) {
+        current = idx;
+        slideImg.src = images[idx].src;
+        slideImg.alt = images[idx].alt;
+        thumbnails.forEach((thumb, i) => {
+          thumb.classList.toggle("active", i === idx);
+        });
+      }
+
+      leftBtn.addEventListener("click", () => {
+        showSlide((current - 1 + images.length) % images.length);
+      });
+      rightBtn.addEventListener("click", () => {
+        showSlide((current + 1) % images.length);
+      });
+      thumbnails.forEach((thumb, i) => {
+        thumb.addEventListener("click", () => showSlide(i));
+      });
+
+      // Initialize
+      showSlide(0);
+    </script>
+  </body>
+</html>

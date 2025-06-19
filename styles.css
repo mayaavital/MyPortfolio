@@ -355,8 +355,15 @@ link a {
   font-style: normal;
   color: #fff;
   background-color: #272727;
-  align-self: self-end;
   text-decoration: none;
+  margin-left: auto;
+  margin-right: 0;
+  display: block;
+}
+.block-button.left-align {
+  margin-left: 0;
+  margin-right: auto;
+  display: block;
 }
 
 @media (max-width: 800px) {
@@ -519,7 +526,7 @@ link a {
   transform: translateY(-50%);
   background: rgba(200, 200, 200, 0.3);
   border: none;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #444;
   cursor: pointer;
   z-index: 2;
