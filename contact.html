@@ -67,5 +67,13 @@
         </form>
       </div>
     </main>
+    <script>
+      // Dropdown menu toggle for mobile
+      const navToggle = document.querySelector(".nav-dropdown-toggle");
+      const navMenu = document.querySelector(".nav-dropdown-menu");
+      navToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("show");
+      });
+    </script>
   </body>
 </html>
