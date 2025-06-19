@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vouch</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="centered-header">
+        <h1 class="main-title">MAYA AVITAL</h1>
+        <nav class="centered-nav">
+          <span class="nav-title">CONTACT</span>
+          <button class="nav-dropdown-toggle" aria-label="Open menu">
+            &#9660;
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="index.html">ABOUT</a>
+            <a href="portfolio.html">WORK</a>
+            <a href="more.html">ATHLETICS</a>
+            <a href="contact.html" class="active">CONTACT</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="contact-form-container">
+        <h1>Contact Me</h1>
+        <p>
+          Have questions about my work? Share a passionfor film photography or
+          music? Send me a message!
+        </p>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xpwrlngr"
+          method="POST"
+        >
+          <div class="name-row">
+            <label>
+              First Name
+              <input type="text" name="first-name" required />
+            </label>
+            <label>
+              Last Name
+              <input type="text" name="last-name" required />
+            </label>
+          </div>
+          <label>
+            Email Address
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Subject
+            <input type="text" name="subject" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" required></textarea>
+          </label>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://yourdomain.com/thank-you.html"
+          />
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

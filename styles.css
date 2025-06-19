@@ -690,3 +690,102 @@ link a {
     border-bottom: none;
   }
 }
+
+/* Contact Form Styles */
+.contact-form-container {
+  max-width: 600px;
+  margin: 3rem auto 2rem auto;
+  padding: 2.5rem 2rem 2rem 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: none;
+  font-family: Optima, sans-serif;
+}
+.contact-form-container h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  color: #181818;
+}
+.contact-form-container p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2.2rem;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.contact-form label {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  display: block;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem 0.7rem;
+  border: 1.5px solid #bbb;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: Optima, sans-serif;
+  margin-top: 0.3rem;
+  margin-bottom: 0.7rem;
+  background: #fafafa;
+  transition: border 0.2s;
+  resize: none;
+}
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1.5px solid #181818;
+  outline: none;
+}
+.contact-form .name-row {
+  display: flex;
+  gap: 1.2rem;
+}
+.contact-form .name-row label {
+  flex: 1;
+}
+.contact-form button[type="submit"] {
+  margin-top: 1.2rem;
+  padding: 0.8rem 0;
+  width: 160px;
+  align-self: flex-start;
+  background: #fff;
+  color: #181818;
+  border: 2px solid #181818;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-family: Optima, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.contact-form button[type="submit"]:hover {
+  background: #181818;
+  color: #fff;
+}
+@media (max-width: 700px) {
+  .contact-form-container {
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .contact-form .name-row {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .contact-form button[type="submit"] {
+    width: 100%;
+    align-self: stretch;
+  }
+}
