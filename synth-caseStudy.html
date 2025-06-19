@@ -11,10 +11,16 @@
       <div class="centered-header">
         <h1 class="main-title">MAYA AVITAL</h1>
         <nav class="centered-nav">
-          <a href="index.html">ABOUT</a>
-          <a href="portfolio.html" class="active">WORK</a>
-          <a href="more.html">ATHLETICS</a>
-          <a href="contact.html">CONTACT</a>
+          <span class="nav-title">WORK</span>
+          <button class="nav-dropdown-toggle" aria-label="Open menu">
+            &#9660;
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="index.html">ABOUT</a>
+            <a href="portfolio.html" class="active">WORK</a>
+            <a href="more.html">ATHLETICS</a>
+            <a href="contact.html">CONTACT</a>
+          </div>
         </nav>
       </div>
     </header>
@@ -260,6 +266,13 @@
 
       // Initialize
       showSlide(0);
+
+      // Dropdown menu toggle for mobile
+      const navToggle = document.querySelector(".nav-dropdown-toggle");
+      const navMenu = document.querySelector(".nav-dropdown-menu");
+      navToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("show");
+      });
     </script>
   </body>
 </html>

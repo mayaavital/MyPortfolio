@@ -11,10 +11,16 @@
       <div class="centered-header">
         <h1 class="main-title">MAYA AVITAL</h1>
         <nav class="centered-nav">
-          <a href="index.html">ABOUT</a>
-          <a href="portfolio.html" class="active">WORK</a>
-          <a href="more.html">ATHLETICS</a>
-          <a href="contact.html">CONTACT</a>
+          <span class="nav-title">WORK</span>
+          <button class="nav-dropdown-toggle" aria-label="Open menu">
+            &#9660;
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="index.html">ABOUT</a>
+            <a href="portfolio.html" class="active">WORK</a>
+            <a href="more.html">ATHLETICS</a>
+            <a href="contact.html">CONTACT</a>
+          </div>
         </nav>
       </div>
     </header>
@@ -34,7 +40,7 @@
           <hr />
           <h2>Problem Statement</h2>
           <p>
-            AI Agents, such as OpenAI’s Operator, present a different challenge
+            AI Agents, such as OpenAI's Operator, present a different challenge
             compared to the traditional chatbot interfaces that have captured
             the attention of the world and AI market. With, the extreme
             independence these models operate at and the possible widespread
@@ -67,5 +73,13 @@
         </div>
       </div>
     </main>
+    <script>
+      // Dropdown menu toggle for mobile
+      const navToggle = document.querySelector(".nav-dropdown-toggle");
+      const navMenu = document.querySelector(".nav-dropdown-menu");
+      navToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("show");
+      });
+    </script>
   </body>
 </html>

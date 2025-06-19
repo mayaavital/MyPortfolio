@@ -11,10 +11,16 @@
       <div class="centered-header">
         <h1 class="main-title">MAYA AVITAL</h1>
         <nav class="centered-nav">
-          <a href="index.html">ABOUT</a>
-          <a href="portfolio.html">WORK</a>
-          <a href="more.html" class="active">ATHLETICS</a>
-          <a href="contact.html">CONTACT</a>
+          <span class="nav-title">ATHLETICS</span>
+          <button class="nav-dropdown-toggle" aria-label="Open menu">
+            &#9660;
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="index.html">ABOUT</a>
+            <a href="portfolio.html">WORK</a>
+            <a href="more.html" class="active">ATHLETICS</a>
+            <a href="contact.html">CONTACT</a>
+          </div>
         </nav>
       </div>
     </header>
@@ -45,7 +51,7 @@
       </section>
       <section class="introduction" style="margin-bottom: 20px">
         <h2>Transferrable Skills: Stanford Athlete -> SWE/Designer</h2>
-        <p>click on the skills to read more</p>
+        <h4>click on the skills to read more</h4>
       </section>
       <section style="text-align: center">
         <button type="button" class="collapsible">Resilience</button>
@@ -57,8 +63,8 @@
             part of exploration and creativity. I am confident that my
             resilience will drive me to continue learning from failures and move
             towards a successful outcome. <br />
-            “Enlighted trial and error succeeds over the planning of the lone
-            genius” - Tom Kelly
+            "Enlighted trial and error succeeds over the planning of the lone
+            genius" - Tom Kelly
           </p>
         </div>
         <button type="button" class="collapsible">Time Management</button>
@@ -111,6 +117,13 @@
             }
           });
         }
+
+        // Dropdown menu toggle for mobile
+        const navToggle = document.querySelector(".nav-dropdown-toggle");
+        const navMenu = document.querySelector(".nav-dropdown-menu");
+        navToggle.addEventListener("click", function () {
+          navMenu.classList.toggle("show");
+        });
       </script>
     </main>
   </body>
