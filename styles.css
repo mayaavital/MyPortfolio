@@ -128,9 +128,11 @@ nav {
 }
 
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 1.5rem;
   padding: 2rem;
   justify-content: center;
   background: #fff;
@@ -140,6 +142,10 @@ nav {
   max-width: 22rem;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.photo-grid {
+  display: contents;
 }
 
 /* Work Page Specific Styles */
@@ -787,5 +793,17 @@ link a {
   .contact-form button[type="submit"] {
     width: 100%;
     align-self: stretch;
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    padding: 1rem;
   }
 }
