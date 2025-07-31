@@ -18,7 +18,7 @@
         <nav class="centered-nav">
           <span class="nav-title">HOME</span>
           <button class="nav-dropdown-toggle" aria-label="Open menu">
-            <i class="fas fa-caret-down"></i>
+            &#9660;
           </button>
           <div class="nav-dropdown-menu">
             <a href="index.html" class="active">HOME</a>
@@ -129,5 +129,13 @@
         </div>
       </div>
     </main>
+    <script>
+      // Dropdown menu toggle for mobile
+      const navToggle = document.querySelector(".nav-dropdown-toggle");
+      const navMenu = document.querySelector(".nav-dropdown-menu");
+      navToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("show");
+      });
+    </script>
   </body>
 </html>
