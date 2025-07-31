@@ -840,14 +840,14 @@ link a {
 
 @media (max-width: 500px) {
   .hero-image {
-    width: 95%;
+    width: 400px;
     max-width: 400px;
   }
 }
 
 @media (max-width: 400px) {
   .hero-image {
-    width: 98%;
+    width: 350px;
     max-width: 350px;
   }
 }
