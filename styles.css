@@ -874,6 +874,19 @@ link a {
   }
   .hero-container {
     position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-58%);
+  }
+}
+
+@media (max-width: 450px) {
+  .hero-image {
+    width: 400px;
+    max-width: 400px;
+  }
+  .hero-container {
+    position: absolute;
     top: 45%;
     left: 50%;
     transform: translateX(-58%);
