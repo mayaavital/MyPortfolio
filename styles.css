@@ -874,7 +874,7 @@ link a {
   }
   .hero-container {
     position: absolute;
-    top: 30%;
+    top: 45%;
     left: 50%;
     transform: translateX(-58%);
   }
