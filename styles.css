@@ -18,14 +18,6 @@ header {
   background: #fff;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
-.home-container {
-  max-width: 600px;
-  margin: 1rem auto 0 auto;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 12px;
-  text-align: center;
-}
 
 nav {
   display: flex;
@@ -807,6 +799,23 @@ link a {
     padding: 1rem;
   }
 }
+.home-container {
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Hero Container - wraps image and buttons */
+.hero-container {
+  position: absolute;
+  top: 6rem;
+  left: 50%;
+  transform: translateX(-60%);
+  pointer-events: none;
+}
 
 /* Hero Image Styles */
 .hero-image {
@@ -814,7 +823,18 @@ link a {
   max-width: 1200px;
   height: auto;
   display: block;
-  margin: 0 auto;
+}
+
+/* Social Button Container - positioned relative to hero container */
+.social-button-container {
+  display: flex;
+  max-width: calc(0.5 * 100vw);
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-left: 25%;
+  margin-right: auto;
+  pointer-events: auto;
 }
 
 /* Responsive adjustments for different screen sizes */
